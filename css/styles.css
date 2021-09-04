@@ -97,6 +97,16 @@ hr {
   opacity: 0.25;
 }
 
+.link-bio{
+  text-decoration: none;
+}
+
+.link-bio:hover{
+  color:var(--bs-gray-dark);
+  padding: 1pt;
+  background-color: var(--bs-primary);
+}
+
 .clickable{
   text-decoration:none; 
   color:white;
