@@ -7583,7 +7583,12 @@ textarea.form-control-lg {
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-  background-image: url('https://i.imgur.com/CF1iIKq.jpg');
+}
+
+.bg-primary-img {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: url('https://github.com/avionmission/avionmission.github.io/blob/main/assets/img/bg-img-code.jpg?raw=true');
 }
 
 .bg-secondary {
