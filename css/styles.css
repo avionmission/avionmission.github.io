@@ -54,7 +54,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
   --bs-font-sans-serif: "Lato", -apple-system, 'Rubik', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, 'Menlo', Monaco, 'Consolas', "Liberation Mono", "Courier New", monospace;
+  --bs-font-monospace: SFMono-Regular, 'Menlo', 'JetBrains Mono', Monaco, 'Consolas', "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: 'Rubik';
   --bs-handwritting-font: 'Rock Salt'
@@ -7582,13 +7582,14 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-primary-rgb), 0.9) !important;
 }
 
 .bg-primary-img {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-  background-image: url('https://github.com/avionmission/avionmission.github.io/blob/main/assets/img/bg-img-code.jpg?raw=true');
+  /* --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; */
+
+  background-image: url('https://unsplash.com/photos/cvBBO4PzWPg/download?force=true&w=2400?raw=true');
 }
 
 .bg-secondary {
@@ -7624,6 +7625,13 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-dark-round {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), 0.35) !important;
+  border-radius: 25px;
+  
 }
 
 .bg-black {

@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Homemade+Apple&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -39,12 +40,13 @@
             </div>
         </nav>
           <!-- Masthead-->
-        <header class="masthead bg-primary-img text-white text-left">
+        <div class="bg-primary-img">
+        <header class="masthead bg-primary text-white text-left">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
                 <!-- Masthead Heading-->
-                <p class="handwritten mb-0 ">Hi, I'm Avinash</p>
+                <p class="handwritten mb-0 text-warning">Hi, I'm Avinash</p>
             </div>
             <div class="container d-flex flex-column">
                 <p></p>
@@ -52,6 +54,7 @@
                 <p class="masthead-subheading font-weight-light mb-0">Welcome to my website. This is where I share the <a href="#portfolio" class="link-bio">projects</a> that I work on as a Developer. In my <a href="https://avionmission.github.io/blog" class="link-bio">blog</a>, I write about the lessons I learn along the way in my journey of developing software, working on open-source projects and other interesting things about technology, startups, and life.</p>
             </div>
         </header>
+        </div>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -63,18 +66,20 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
+                    <p class="text-white" style = "font-family: JetBrains Mono">COURSES</p>
+                    <hr class="text-secondary" style="padding: 0.25%;">
+                    
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto">
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." style="margin-bottom: 5%; border-radius: 0.5rem; overflow: hidden;" /></a>
-                            <h2 style="color:white"><a class="clickable" href="https://avionmission.github.io/rockpaperscissor-gui/">Turning Python Programs into Android Apps</a></h2>
-                            <p class="mb-4" style="color:whitesmoke">Using libraries like Kivymd python code can deployed on multiple platforms like Android and IoS. I turned a simple python program of rock-paper-scissor into an installable apk. Here's how.</p>
+                            <img class="img-fluid" src="assets/img/portfolio/android_plus_python.png" alt="..." style="margin-bottom: 5%; border-radius: 0.5rem; overflow: hidden;" /></a>
+                            <h2 style="color:white; font-family: JetBrains Mono" ><a class="clickable" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp">Android Development with Python</a></h2>
+                            <p class="mb-4" style="color:whitesmoke; font-family: JetBrains Mono">Make your first app in 12 minutes. Then we will create an instagram-clone and learn more about kivy libraries along the way. I will also show you how to convert your .py file into a .apk (that doesn't crash).</p>
                             <p>
-                                <a href="https://avionmission.github.io/blog/convert-py-to-apk-using-python-and-buildozer/" class="clickable_button">READ MORE</a>
-                                <a href="https://github.com/avionmission/rockpaperscissor-gui/" class="clickable_button">GITHUB</a>
+                                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp" class="clickable_button" style="font-family: JetBrains Mono">VIEW COURSE</a>
                             </p>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </section>
