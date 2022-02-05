@@ -80,7 +80,7 @@ nav img{
     position: absolute;
     top: 17%;
     left: 50%;
-    padding: 0 14px 0 14px;
+    padding: 10px 14px 0 14px;
     transform: translate(-50%, -17%);
     text-align: center;
 }
@@ -91,9 +91,9 @@ nav img{
 }
 .text-box p {
     margin: 10px 0 10px 0;
-    font-size: 17px;
+    font-size: 20px;
     color: black;
-    text-align: center;
+    text-align: justify;
 }
 
 .hero-btn {
@@ -135,11 +135,11 @@ nav .lni{
         transform: translate(-50%, -15%);
     }
     .text-box h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .text-box p {
-        font-size: 16px;
+        font-size: 18px;
     }
     .nav-links ul li {
         display: block;
@@ -275,6 +275,69 @@ h3{
     }
 }
 
+/* Contact form */
+
+.contact-me {
+    width: 80%;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-me h1 {
+    color: #02a5ba;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 3%;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #f26554;
+    text-decoration-color: #f26554;
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+    /* text-align: left; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw, 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: #f26554;
+    color: #f26554;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    margin: 20px auto 0;
+    width: 95%;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+form button:hover{
+    color: #fff;
+    background-color: #f26554;
+    border-color: #f26554;
+}
+
+
 /* Footer */
 
 .footer{
@@ -316,4 +379,26 @@ h3{
 
 .footer small{
     color: grey;
+}
+
+@media(max-width: 700px){
+    .footer {
+        margin: 3%;
+    }
+}
+
+.footer-hr{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    opacity: 60%;
+}
+
+.dashed{
+    border-top: 1px dashed grey;
+    opacity: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
