@@ -1,147 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Avinash Prasad - Online Home</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>Avinash Prasad</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="\assets\favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Homemade+Apple&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-dark bg-primary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Avinash Prasad</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse bg" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://avionmission.github.io/blog/">Blog</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://www.youtube.com/c/AvinashPrasad">Videos</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="\assets\img\title-logo2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="lni lni-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="https://avionmission.github.io/blog/">BLOG</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCkDghymouhHlWZSYhgMqeKw">VIDEOS</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-          <!-- Masthead-->
-        <div class="bg-primary-img">
-        <header class="masthead bg-primary text-white text-left">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <!-- Masthead Heading-->
-                <p class="handwritten mb-0 text-warning">Hi, I'm Avinash</p>
-            </div>
-            <div class="container d-flex flex-column">
-                <p></p>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Welcome to my website. This is where I share the <a href="#portfolio" class="link-bio">projects</a> that I work on as a Developer. In my <a href="https://avionmission.github.io/blog" class="link-bio">blog</a>, I write about the lessons I learn along the way in my journey of developing software, working on open-source projects and other interesting things about technology, startups, and life.</p>
-            </div>
-        </header>
-        </div>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center" id="courses">
-                    <p class="text-white" style = "font-family: JetBrains Mono">COURSES I'VE CREATED</p>
-                    <hr class="text-secondary" style="padding: 0.25%;">
-                    
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto">
-                            <img class="img-fluid" src="assets/img/portfolio/android_plus_python.png" alt="..." style="margin-bottom: 5%; border-radius: 0.5rem; overflow: hidden;" /></a>
-                            <h2 style="color:white; font-family: JetBrains Mono" ><a class="clickable" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp">Android Development with Python</a></h2>
-                            <p class="mb-4" style="color:whitesmoke; font-family: JetBrains Mono">Make your first app in 12 minutes. Then we will create an instagram-clone and learn more about kivy libraries along the way. I will also show you how to convert your .py file into a .apk (that doesn't crash).</p>
-                            <p>
-                                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp" class="clickable_button" style="font-family: JetBrains Mono">VIEW COURSE</a>
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
+                <i class="lni lni-menu" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <img src="assets/img/avinash-prasad-masthead.png" class="masthead">
+                <h1>Hi, I'm Avinash</h1>
+                <p>Welcome to my website. This is where I share the projects that I work on as a Developer.In my <a href="https://avionmission.github.io/blog"><b>blog</b></a>, I write about the lessons I learn along the way in my journey of developing software, working on open-source projects and other interesting things about technology, startups, and life.</p>
             </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section bg-primary text-white mb-0" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                </div>
-            </br>
-            <p class="masthead-subheading container font-weight-light">If you are interested in contacting me, please email me at <a href="mailto:avionmission@gmail.com">avionmission@gmail.com</a>. Or you can connect with me on any of the following social media.</p>
-            <!-- Social media icons-->
-            <div class="container text-center">
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.reddit.com/user/avismission"><i class="fab fa-fw fa-reddit"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/avionmission"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/avionmission/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/avionmission/"><i class="fab fa-fw fa-instagram"></i></a>
+
+        <!---Courses section-->
+        <section class="course">
+        <h1 >MY FREE COURSES</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Android Development with Python</h3>
+                <img class="course-cover" src="assets/img/portfolio/android_plus_python.png"/>
+                <p>Make your first app in 12 minutes. Then we will create an instagram-clone and learn more about kivy libraries along the way. I will also show you how to convert your .py file into a .apk (that doesn't crash).</p>
+                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp" class="visit-btn">VIEW COURSE</a>
             </div>
+            <div class="course-col">
+                <h3>Advance Video Editing Course</h3>
+                <img class="course-cover" src="assets/img/portfolio/Alight_motion_course_thumbnail.jpg">
+                <p>Lot of people wish they had an advanced video editing app like After Effects in their phone, now it's a reality. In this course we learn to use an android app, Alight Motion, that allows us to use advance editing techniques like rotoscoping and motion graphics to edit professional videos in your mobile device.</p>
+                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9" class="visit-btn">VIEW COURSE</a>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center align-items-center flex-column">
-            <div class="container align-items-center flex-column">
-                <div class="row">
-                    <div class="row">
-                        <!-- <h4 class="text-uppercase mb-4">About Freelancer</h4> -->
-                        <p class="lead mb-0">
-                            This site is hosted on
-                            <a href="https://pages.github.com/">GitHub</a>
-                            .
-                        </p>
-                    </div>
-                    <!-- Footer Location--
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
-                     Footer Social Icons-->
-                    <!-- Footer About Text -->
-                    
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Avinash Prasad 2021</small></div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        </section>
+
+        <!---Footer section-->
+        <section class="footer">
+            <h3>Stay in touch</h3>
+            <div class="text-center">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <p><small>Avinash Prasad &copy; 2022</small></p>
+        </section>
+
+        
+
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
     </body>
 </html>
