@@ -9,7 +9,7 @@ html, body {
 }
 
 .header {
-    min-height: 20vh;
+    min-height: 26vh;
     width: 100%;
 }
 
@@ -78,12 +78,11 @@ nav img{
     color: black;
     border-radius: 10px;
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 50%;
     padding: 0 14px 0 14px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -17%);
     text-align: center;
-    margin-top: 8vh;
 }
 
 .text-box h1{
@@ -112,7 +111,7 @@ nav img{
 .masthead{
     width: 20%;
     height: auto;
-    margin-top: -40px;
+
 }
 
 .hero-btn:hover{
@@ -128,14 +127,12 @@ nav .lni{
 }
 
 @media (max-width: 700px) {
-    .text-box{
-        margin-top: 16vh;
-    }
     .masthead{
         width: 30%;
     }
     .text-box{
         width: 90%;
+        transform: translate(-50%, -17%);
     }
     .text-box h1 {
         font-size: 30px;
@@ -184,12 +181,13 @@ nav .lni{
     width: 80%;
     margin: auto;
     text-align: justify;
-    padding-top: 250px;
+    padding-top: 205px;
 }
 .course h1 {
     color: #02a5ba;
     font-size: 26px;
     font-weight: 600;
+    margin-bottom: 3%;
     text-decoration: underline;
     -webkit-text-decoration-color: #f26554;
     text-decoration-color: #f26554;
@@ -210,7 +208,7 @@ p{
     justify-content: space-between;
 }
 .course-col {
-    flex-basis: 31%;
+    flex-basis: 51%;
     margin-left: 2%;
     background: #ffffff;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
