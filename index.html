@@ -26,7 +26,7 @@
                 <i class="lni lni-menu" onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
-                <img src="assets/img/avinash-prasad-masthead.png" class="masthead">
+                <img src="assets/img/avinash-prasad-masthead.png" alt="" class="masthead">
                 <h1>Hi, I'm Avinash</h1>
                 <p>Welcome to my website. This is where I share the projects that I work on as a Developer.In my <a href="https://avionmission.github.io/blog"><b>blog</b></a>, I write about the lessons I learn along the way in my journey of developing software, working on open-source projects and other interesting things about technology, startups, and life.</p>
             </div>
@@ -71,10 +71,16 @@
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu() {
-            navLinks.style.right = "0";
+            // navLinks.style.right = "0";
+            navLinks.style.opacity = "1";
+            navLinks.style.pointerEvents = "all"
+            navLinks.style.marginTop="0vh";
         }
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            // navLinks.style.right = "-200px";
+            navLinks.style.opacity = "0";
+            navLinks.style.pointerEvents = "none"
+            navLinks.style.marginTop="6vh";
         }
     </script>
     
