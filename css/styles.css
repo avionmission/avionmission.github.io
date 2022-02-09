@@ -317,8 +317,15 @@ form input, form textarea{
     font-size: 16px;
 }
 
-form button{
+.gmail-button{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: auto;
     padding: 15px;
+    text-decoration: none;
     background-color: transparent;
     border: 1px solid transparent;
     border-color: #f26554;
@@ -326,15 +333,65 @@ form button{
     font-size: 18px;
     outline: none;
     cursor: pointer;
-    margin: 20px auto 0;
-    width: 95%;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-form button:hover{
+.gmail-button:hover{
     color: #fff;
     background-color: #f26554;
     border-color: #f26554;
+}
+
+.twitter-dm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+    padding: 15px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: #00acee;
+    color: #00acee;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.twitter-dm:hover{
+    border-color: #00acee;
+    background-color: #00acee;
+    color: #fff;
+}
+
+.linkedin-dm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+    padding: 15px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: #0074a1;
+    color: #0074a1;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.linkedin-dm:hover{
+    border-color: #0074a1;
+    background-color: #0074a1;
+    color: #fff;
 }
 
 
