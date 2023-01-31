@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <a href="#" class="float" onclick="darkMode()">
+            <i class="fa fa-moon-o my-float" id="toggle-button"></i>
+            <!--<i class="fa fa-sun-o my-float"></i>-->
+        </a>
         <section class="header">
             <nav>
                 <a href="index.html"><img src="\assets\img\title-logo2.png"></a>
@@ -20,7 +24,7 @@
                     <i class="lni lni-close" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="https://avionmission.github.io/blog/">BLOG</a></li>
+                        <li><a href="https://avionmission.hashnode.dev/">BLOG</a></li>
                         <li><a href="https://www.youtube.com/channel/UCkDghymouhHlWZSYhgMqeKw">VIDEOS</a></li>
                     </ul>
                 </div>
@@ -29,7 +33,9 @@
             <div class="text-box">
                 <img src="assets/img/avinash-prasad-masthead.png" alt="" class="masthead">
                 <h1>Hi, I'm Avinash</h1>
-                <p>Welcome to my online home. This is where I share the projects that I work on. I share what I learn on my <a href="https://avionmission.github.io/blog"><b>blog</b></a>, and my <a href="https://youtube.com/AvinashPrasad"><b>youtube channel</b></a>.</p>
+                <p>👋 Welcome to my online home. </p>
+                <p>💼 This is where I share the projects that I work on.</p>  
+                <p>📖 I share what I learn on my <a href="https://avionmission.hashnode.dev/"><b>blog</b></a>, and my <a href="https://youtube.com/AvinashPrasad"><b>youtube channel</b></a>.</p>
             </div>
         </section>
 
@@ -57,7 +63,6 @@
                 <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9" class="visit-btn">VIEW COURSE</a>
             </div>
         </div>
-
         </section>
 
         <hr class="dashed">
@@ -100,6 +105,11 @@
             navLinks.style.opacity = "0";
             navLinks.style.pointerEvents = "none"
             navLinks.style.marginTop="6vh";
+        }
+        function darkMode() {
+            var element = document.body;
+            var toggleButton = document.getElementById("toggle-buttoṇ");
+            element.classList.toggle("dark-mode");
         }
     </script>
     </body>

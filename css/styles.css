@@ -14,6 +14,38 @@ html, body {
     zoom: 120%;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(32, 32, 34);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:12px;
+}
+
+.dark-mode {
+    background-color: #26272c;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #191e20 79px, #22292a 81px, transparent 81px),
+    linear-gradient(rgb(32, 32, 32) .1em, transparent .1em);
+}
+
+.dark-mode .float{
+    filter: invert(100%);
+}
+
+.dark-mode nav .lni {
+    color: white;
+}
+
 .header {
     min-height: 26vh;
     width: 100%;
@@ -35,8 +67,12 @@ nav {
     align-items: center;
 }
 
-.text-box p{
-    text-align: justify;
+.dark-mode .text-box p {
+    color: white;
+}
+
+.dark-mode h1 {
+    color: white;
 }
 
 .text-box a:link{
@@ -75,6 +111,10 @@ nav img{
     font-size: 15px;
 }
 
+.dark-mode .nav-links ul li a {
+    color: white;
+}
+
 .nav-links ul li::after{
     content: " ";
     width: 0%;
@@ -109,7 +149,7 @@ nav img{
     margin: 0px 0 10px 0;
     font-size: 20px;
     color: black;
-    text-align: justify;
+    text-align: center;
 }
 
 .hero-btn {
@@ -200,6 +240,7 @@ nav .lni{
     padding-top: 205px;
 }
 .course h1 {
+    margin-top: 10px;
     color: #02a5ba;
     font-size: 26px;
     font-weight: 600;
@@ -219,7 +260,7 @@ p{
 }
 
 .row {
-    margin-top: 2%;
+    margin-top: 0.5%;
     display: flex;
     justify-content: space-between;
 }
@@ -233,6 +274,19 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 00.5s;
+}
+
+.dark-mode .course p {
+    color: white;
+}
+
+.dark-mode .course-col {
+    background-color: #181a1b;
+    color: white;
+}
+
+.dark-mode .course-col p {
+    color: white;
 }
 
 @media(max-width:1500px) {
@@ -276,10 +330,15 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
+
+.dark-mode h3 {
+    color: white;
+}
+
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.);
 }
-@media(max-width: 700px){
+@media(max-width: 1200px){
 
     .course{
         margin-top: 5vh;
@@ -474,4 +533,8 @@ form input, form textarea{
     opacity: 30%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.dark-mode .dashed {
+    opacity: 10%;
 }
