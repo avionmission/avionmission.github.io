@@ -183,6 +183,10 @@ nav .lni{
 }
 
 @media (max-width: 700px) {
+    .header {
+        margin-bottom: 90px;
+    }
+
     .masthead{
         width: 30%;
     }
