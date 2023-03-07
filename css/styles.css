@@ -129,7 +129,7 @@ nav img{
 }
 
 .text-box {
-    width: 45%;
+    width: 40%;
     margin: auto;
     color: black;
     border-radius: 10px;
@@ -146,8 +146,8 @@ nav img{
     margin-top: 1%;
 }
 .text-box p {
-    margin: 0px 0 10px 0;
-    font-size: 20px;
+    margin: 0px 0 0px 0;
+    font-size: 15px;
     color: black;
     text-align: center;
 }
@@ -191,7 +191,7 @@ nav .lni{
         width: 30%;
     }
     .text-box{
-        width: 90%;
+        width: 100%;
         transform: translate(-50%, -15%);
     }
     .text-box h1 {
@@ -199,7 +199,7 @@ nav .lni{
     }
 
     .text-box p {
-        font-size: 18px;
+        font-size: 15px;
     }
     .nav-links ul li {
         display: block;
@@ -241,7 +241,7 @@ nav .lni{
     width: 80%;
     margin: auto;
     text-align: justify;
-    padding-top: 205px;
+    padding-top: 150px;
 }
 .course h1 {
     margin-top: 10px;
@@ -301,6 +301,7 @@ p{
 .course-col {
     flex-basis: 31%;
     margin-left: 2%;
+    height: min-content;
     background: rgba(255, 255, 255, 0.17);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
@@ -308,10 +309,11 @@ p{
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 0.15s;
 }
 
 .course-col:hover{
+    border: 1.5px solid #f26554;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
     cursor: pointer;
 }
