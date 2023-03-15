@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Golos Text', sans-serif;
+    background-image: url(assets/img/white-concrete-wall.jpg);
+    background-size:auto;
+    scroll-behavior: smooth;
+    
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fwt-500 {
+    font-weight: 500;
+}
+
+.fwt-600{
+    font-weight: 500;
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.text-gray-450 {
+    color: #989898;
+}
+
+.insta-gradient {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    max-width: 200px; height: fit-content;
+}
+
+@media (max-width: 640px) {
+    .logo {
+        max-width: 150px;
+    }
+
+    .scroll-button {
+        background: #000;
+        bottom: 3.2rem;
+        left: 80%;
+        height: 3rem;
+        width: 2rem;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .section::before {
+        animation: bounce 1s ease infinite;
+        bottom: 4rem;
+        color: #b1b1b1;
+        content: '↓';
+        font-size: 3rem;
+        left: 80%;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        text-align: center;
+        border-radius: 100px;
+      }
+      
+      @keyframes bounce {
+        50% {
+          transform: translateY(-50%);
+        }
+      }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .trans {
+    transition: 0.5s;
+  }
+
+  .trans2 {
+    transition: 2s;
+  }
+
+  .hidden {
+    opacity: 0%;
+  }
+
+  .footer {
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }

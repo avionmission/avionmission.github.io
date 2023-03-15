@@ -1,124 +1,114 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
-        <title>Avinash Prasad</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" type="image/x-icon" href="\assets\favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
-        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <a href="#" class="float" onclick="darkMode()">
-            <i class="fa fa-moon-o my-float" id="toggle-button"></i>
-            <!--<i class="fa fa-sun-o my-float"></i>-->
-        </a>
-        <section class="header">
-            <nav>
-                <a href="index.html"><img src="\assets\img\title-logo2.png"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="lni lni-close" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="https://avionmission.github.io/blog">BLOG</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCkDghymouhHlWZSYhgMqeKw">VIDEOS</a></li>
-                    </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash Prasad - Freelance App Developer</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/x-icon" href="\assets\favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-col items-center pt-5 px-5">
+        <div class="mt-4 px-3"  style="max-width: 800px;">
+
+            <nav class="flex justify-between items-center">
+                <a href="#" class="cursor-pointer"><img src="assets/img/title-logo2.png" class="logo mr-5"/></a>
+                
+                <div class="flex items-center justify-center">
+                    <a href="https://avionmission.github.io/blog" target="_blank" class="mt-auto mb-auto text-gray-900 hover-underline-animation font-medium text-base rounded-lg text-center mr-6 mb-2 cursor-pointer">Blog</a>
+                    <a class="mt-auto mb-auto text-gray-900 hover-underline-animation font-medium text-base rounded-lg text-center mr-3 mb-2 cursor-pointer" href="#courses">Portfolio</a>  
                 </div>
-                <i class="lni lni-menu" onclick="showMenu()"></i>
+
             </nav>
-            <div class="text-box">
-                <img src="assets/img/avinash-prasad-masthead.png" alt="" class="masthead">
-                <h2>👋 Hi, I'm Avinash</h2>
-                <p>👨‍💻I Build Apps using ⚛️ React Native & 💚 Android Studio </p>
-                <p>📖 Follow my <a href="https://avionmission.github.io/blog/"><b>Blog</b></a> and <a href="https://youtube.com/AvinashPrasad"><b>YouTube channel</b></a> to learn app development and practical AI.</p>
-                <p>💼 This is where I share my projects.</p>
-            </div>
-        </section>
 
-        <!---Courses section-->
-        <section class="course">
-        <h1 >MY FREE COURSES</h1>
-        <p>I share my knowledge, so that more people can learn to build cool stuff and contribute to the world's abundance.<div class="row">
-            <!--course 1-->
-            <a class="normal" target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopRwzUWIT5KA_QfuHNtl0QQa">
-            <div class="course-col">
-                <h3>Android Studio: Bootcamp</h3>
-                <img class="course-cover" src="assets\img\portfolio\all_about_android_thumbnail.jpg">
-                <p>Learn Android App Development essentials: RecyclerView, MVVM, etc. using Kotlin in this bootcamp with Android Studio.</p>
-                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopRwzUWIT5KA_QfuHNtl0QQa" class="visit-btn">VIEW COURSE</a>
+            <div class="arrow section trans2" id="scroll-indicator">
+                <a class="scroll-button" href="#courses"></a>
             </div>
-            </a>
-            <!--coruse 2-->
-            <a class="normal" target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp">
-            <div class="course-col">
-                <h3>Android Development with Python</h3>
-                <img class="course-cover" src="assets/img/portfolio/android_plus_python.png"/>
-                <p>Craft your first app in 12 minutes, followed by building an Instagram clone using kivy libraries. Plus, I'll demonstrate how to convert your .py file to a .apk (that dosen't crash).</p>
-                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp" class="visit-btn">VIEW COURSE</a>
+
+            <!--WhoAmI-->
+            <div class="flex flex-row items-center mt-9">
+                <img src="assets/img/dp.png" class="h-32 w-32 mr-6 rounded-full"/>
+                <div class="flex flex-col">
+                    
+                </div>
             </div>
-            </a>
-            <!---course 3-->
-            <a class="normal" target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9">
-            <div class="course-col">
-                <h3>Advance Video Editing Course</h3>
-                <img class="course-cover" src="assets/img/portfolio/Alight_motion_course_thumbnail.jpg">
-                <p>Get advanced video editing done on your phone with Alight Motion, an Android app that enables professional techniques like rotoscoping and motion graphics, taught in this course.</p>
-                <a href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9" class="visit-btn">VIEW COURSE</a>
+
+            <h1 class="text-3xl mt-9 fwt-500">Hi, I'm Avinash Prasad - developer and creator </h1>
+            <h1 class="text-3xl fwt-600 mt-1 text-gray-500" style="max-width: 500px;">I build apps using <span class=""><i class="fa-brands fa-react"></i> React Native</span> and <span class=""><i class="fa-brands fa-android align-bottom"></i> Android Studio</span>.</h1> 
+
+            <!--Contact me-->
+            <div class="mt-7">
+                <a href="https://twitter.com/avionmission"><i class="fa-brands fa-twitter text-3xl mr-4 text-blue-500 hover:scale-125 trans"></i></a>
+                <a href="https://www.youtube.com/c/AvinashPrasad"><i class="fa-brands fa-youtube text-3xl mr-4 text-red-500 hover:scale-125 trans"></i></a>        
+                <a href="https://github.com/avionmission"><i class="fa-brands fa-github text-3xl mr-4 text-black hover:scale-125 trans"></i></a>
+                <a href="https://instagram.com/avionmission"><i class="fa-brands fa-instagram text-3xl mr-4  insta-gradient hover:scale-125 trans"></i></a>
+                <a href="https://www.linkedin.com/in/avionmission/"><i class="fa-brands fa-linkedin text-3xl mr-4  text-blue-600 hover:scale-125 trans"></i></a>
             </div>
-            </a>
+            <p class="mt-5 text-xl">Contact email: <a class="hover-underline-animation" href="https://mail.google.com/mail/?view=cm&fs=1&to=avionmission@gmail.com">avionmission@gmail.com</a></p>
+        
+            <!--My Courses-->
+            <h2 class="text-gray-500 text-2xl mt-20 pt-5" id="courses">My Courses</h2>
+            <div class="mt-3 grid gap-4 sm:grid-cols-2">
+                <!--Course-->
+                <div class="m-3 mr-5 w-auto h-auto lg:w-96 bg-gray-200 rounded-3xl overflow-hidden zoom" style="transition: 0.5s;" >
+                    <img  class="object-cover" src="assets/img/portfolio/all_about_android_thumbnail.jpg"/>
+                    <div class="p-5">
+                        <h3 class="text-xl mb-2">Android Studio: Bootcamp</h3>
+                        <p>Learn Android App Development essentials: RecyclerView, MVVM, etc. using Kotlin in this bootcamp with Android Studio.</p>
+                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopRwzUWIT5KA_QfuHNtl0QQa"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course</button></a>
+                    </div>
+                </div>
+                <!--Course-->
+                <div class="m-3 w-auto h-min lg:w-96 bg-gray-200 rounded-3xl overflow-hidden zoom" style="transition: 0.5s;" >
+                    <img  class="object-cover" src="assets/img/portfolio/android_plus_python.png"/>
+                    <div class="p-5">
+                        <h3 class="text-xl mb-2">Android Development with Python</h3>
+                        <p>Craft your first app in 12 minutes, followed by building an Instagram clone using kivy libraries. Plus, I'll demonstrate how to convert your .py file to a .apk (that dosen't crash).</p>
+                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course</button></a>
+                    </div>
+                </div>
+                <!--Course-->
+                <div class="m-3 w-auto h-auto lg:w-96 bg-gray-200 rounded-3xl overflow-hidden zoom" style="transition: 0.5s;" >
+                    <img  class="object-cover" src="assets/img/portfolio/Alight_motion_course_thumbnail.jpg"/>
+                    <div class="p-5">
+                        <h3 class="text-xl mb-2">Advance Video Editing Course</h3>
+                        <p>Get advanced video editing done on your phone with Alight Motion, an Android app that enables professional techniques like rotoscoping and motion graphics, taught in this course.</p>
+                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course</button></a>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
-        </section>
+    </div>
 
-        <hr class="dashed">
+    <!--Footer-->
+    <div class="p-5 mt-20 bg-gray-300 flex flex-col items-center justify-center">
+        <!--Contact me-->
+        <div class="">
+            <a href="https://twitter.com/avionmission"><i class="fa-brands fa-twitter text-xl mr-4 text-gray-500 hover:text-black trans"></i></a>
+            <a href="https://www.youtube.com/c/AvinashPrasad"><i class="fa-brands fa-youtube text-xl mr-4 text-gray-500 hover:text-black trans"></i></a>        
+            <a href="https://github.com/avionmission"><i class="fa-brands fa-github text-xl mr-4 text-gray-500 hover:text-black trans"></i></a>
+            <a href="https://instagram.com/avionmission"><i class="fa-brands fa-instagram text-xl mr-4  text-gray-500 hover:text-black trans"></i></a>
+            <a href="https://www.linkedin.com/in/avionmission/"><i class="fa-brands fa-linkedin text-xl mr-4  text-gray-500 hover:text-black trans"></i></a>
+        </div>
+        <h1 class="fwt-500 text-xl text-gray-400 mt-3">Avinash Prasad © 2023</h1>
+    </div>
 
-        <!--Contact section-->
-        <section class="contact-me">
-            <h1>CONTACT ME</h1>
-            <a class="gmail-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=avionmission@gmail.com">SEND ME AN EMAIL</a>
-            <a class="twitter-dm" href="https://twitter.com/messages/compose?recipient_id=1071616691266670593">DM ME ON TWITTER</a>
-            <a class="linkedin-dm" href="https://www.linkedin.com/in/avionmission/">DM ME ON LINKEDIN</a>
-        </section>
-
-        <br>
-        <hr class="dashed">
-
-        <!---Footer section-->
-        <section class="footer">
-            <h3>Stay in touch</h3>
-            <div class="text-center">
-                <a href="https://www.linkedin.com/in/avionmission/" class="fa fa-linkedin"></a>
-                <a href="https://twitter.com/avionmission" class="fa fa-twitter"></a>
-                <a href="https://github.com/avionmission" class="fa fa-github"></a>
-                <a href="https://www.youtube.com/channel/UCkDghymouhHlWZSYhgMqeKw" class="fa fa-youtube"></a>
-            </div>
-            <p><small>Avinash Prasad &copy; 2022</small></p>
-        </section>
-
-
-    <!------JavaScript for Toggle Menu------>
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            // navLinks.style.right = "0";
-            navLinks.style.opacity = "1";
-            navLinks.style.pointerEvents = "all"
-            navLinks.style.marginTop="0vh";
+        let arrow = document.getElementById("scroll-indicator");
+        window.onscroll = () => {
+            arrow.classList.add("hidden");
         }
-        function hideMenu() {
-            // navLinks.style.right = "-200px";
-            navLinks.style.opacity = "0";
-            navLinks.style.pointerEvents = "none"
-            navLinks.style.marginTop="6vh";
-        }
-        function darkMode() {
-            var element = document.body;
-            var toggleButton = document.getElementById("toggle-buttoṇ");
-            element.classList.toggle("dark-mode");
+
+        arrow.onclick = () => {
+            
         }
     </script>
-    </body>
+</body>
 </html>
