@@ -13,27 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2079200617314580"
      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/drkmd-js/dist/drkmd-js.min.js" data-drkmd-attach></script>
 </head>
-<body>
+<body>    
     <div class="flex flex-col items-center pt-5 px-5">
+
+        <!--Navigation Bar-->
+        <nav class="nav">
+            <div>
+            <a href="https://www.avionmission.com" class="flex flex-row items-center logo"><img src="../assets/favicon.ico"
+                    class="logo-img" /><span class="logo-txt">AVIONMISSION</span></a>
+            </div>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+    
+            <div class="nav__link hide">
+                <a href="https://www.avionmission.com" class="hover-underline-animation">Home</a>
+                <a href="https://www.avionmission.com/blog" class="hover-underline-animation">Blog</a>
+                <a href="#portfolio" onclick="hideNavLinks()" class="hover-underline-animation">Portfolio</a>
+                <a href="#services" onclick="hideNavLinks()" class="hover-underline-animation">Services</a>
+            </div>
+        </nav>
+
         <div class="mt-4 px-3"  style="max-width: 800px;">
 
-            <nav class="flex justify-between items-center">
-                <a href="#" class="cursor-pointer"><img src="assets/img/title-logo2.png" class="logo mr-5"/></a>
-                
-                <div class="flex items-center justify-center">
-                    <a href="https://avionmission.github.io/blog" target="_blank" class="mt-auto mb-auto text-gray-900 hover-underline-animation font-medium text-base rounded-lg text-center mr-6 mb-2 cursor-pointer">Blog</a>
-                    <a class="mt-auto mb-auto text-gray-900 hover-underline-animation font-medium text-base rounded-lg text-center mr-3 mb-2 cursor-pointer" href="#courses">Portfolio</a>  
-                </div>
-
-            </nav>
-
+            <!--Arrow button-->
             <div class="arrow section trans2" id="scroll-indicator">
-                <a class="scroll-button" href="#courses"></a>
+                <a class="scroll-button" href="#portfolio"></a>
             </div>
 
             <!--WhoAmI-->
-            <div class="flex flex-row items-center mt-9">
+            <div class="flex flex-row items-center mt-7 pt-5">
                 <img src="assets/img/dp.png" class="h-32 w-32 mr-6 rounded-full"/>
                 <div class="flex flex-col">
                     
@@ -45,16 +59,70 @@
 
             <!--Contact me-->
             <div class="mt-7">
-                <a href="https://twitter.com/avionmission"><i class="fa-brands fa-twitter text-3xl mr-4 text-blue-500 hover:scale-125 trans"></i></a>
-                <a href="https://www.youtube.com/c/AvinashPrasad"><i class="fa-brands fa-youtube text-3xl mr-4 text-red-500 hover:scale-125 trans"></i></a>        
-                <a href="https://github.com/avionmission"><i class="fa-brands fa-github text-3xl mr-4 text-black hover:scale-125 trans"></i></a>
-                <a href="https://instagram.com/avionmission"><i class="fa-brands fa-instagram text-3xl mr-4  insta-gradient hover:scale-125 trans"></i></a>
-                <a href="https://www.linkedin.com/in/avionmission/"><i class="fa-brands fa-linkedin text-3xl mr-4  text-blue-600 hover:scale-125 trans"></i></a>
+                <a href="https://twitter.com/avionmission"><i class="fa-brands fa-twitter text-3xl mr-4 text-blue-500 hover:text-blue-400 trans"></i></a>
+                <a href="https://www.youtube.com/c/AvinashPrasad"><i class="fa-brands fa-youtube text-3xl mr-4 text-red-500 hover:text-red-400 trans"></i></a>        
+                <a href="https://github.com/avionmission"><i class="fa-brands fa-github text-3xl mr-4 text-black hover:text-gray-600 trans"></i></a>
+                <a href="https://instagram.com/avionmission"><i class="fa-brands fa-instagram text-3xl mr-4  insta-gradient hover:bg-red-500 trans"></i></a>
+                <a href="https://www.linkedin.com/in/avionmission/"><i class="fa-brands fa-linkedin text-3xl mr-4  text-blue-600 hover:text-blue-500 trans"></i></a>
             </div>
-            <p class="mt-5 text-xl">Contact email: <a class="hover-underline-animation" href="https://mail.google.com/mail/?view=cm&fs=1&to=avionmission@gmail.com">avionmission@gmail.com</a></p>
+            <p class="mt-5 text-xl">Contact email: <a class="hover-underline-animation" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=avionmission@gmail.com">avionmission@gmail.com</a></p>
         
+            <!--CTA-->
+            <div class="mt-20" id="CTA">
+                <h1 class="text-2xl font-medium" style="margin-top: 40px;">Let's Talk About Your Project!</h1>
+                <span class="text-xl bullet-points">
+                    <p>👨‍💻 Are you interested in creating a mobile app for your business? </p>
+                    <p>💡 Let's discuss how we can bring your vision to life.</p></span>
+                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScWGeXAD5Bhw7dwzHx1loqywM-gyShbdNJM24DuBWPQMqtWow/viewform"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-2 mb-2 border border-black" style="width: 100%;">CONTACT US -></button></a>
+            </div>
+            
+            <!--Portfolio of Apps-->
+            <h2 class="text-2xl pt-12 font-medium" id="portfolio"><span class="">Portfolio of Apps</span></h2>
+            <div class="mt-3 flex flex-col">
+                <!--Project-->
+                <div class="m-3 mr-5 w-auto h-auto bg-gray-200 rounded-3xl overflow-hidden zoom" style="transition: 0.5s;" >
+                    <img class="applogo p-5" src="assets/img/portfolio/jobdonelogo.png"/>
+                    <div class="p-5">
+                        <h3 class="text-xl mb-2"><span class="font-semibold">JobDone:</span> Revolutionizing the Service Industry</h3>
+                        <div class="tag-container inline-flex flex-wrap items-center">
+                            <span class="font-semibold text-slate-600 mr-2">Tech Stack:</span>
+                            <span class="tag">Android Studio</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">XML</span>
+                            <span class="tag">Firebase</span>
+                        </div>                       
+                        <p class="mt-3">JobDone is an innovative mobile app that connects customers with nearby service providers for a wide range of services such as video editing, electrical repairs, photography, and more. </p>
+                        
+                        <div class="flex mt-3.5 flex-col md:flex-row items-center">
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jobdoneindia.jobdone"><img class="img-btn mr-3 mt-1.5" src="assets/img/portfolio/playstorelink.png"/></a>
+                            <a target="_blank" href="./case-study/jobdone.html"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">CASE STUDY -></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project-->
+                <div class="m-3 mr-5 w-auto h-auto bg-gray-200 rounded-3xl overflow-hidden zoom" style="transition: 0.5s;" >
+                    <img class="applogo p-5" src="assets/img/portfolio/openshoplogo.png"/>
+                    <div class="p-5">
+                        <h3 class="text-xl mb-2"><span class="font-semibold">OpenShop:</span> An Ecommerce App</h3>
+                        <div class="tag-container inline-flex flex-wrap items-center">
+                            <span class="font-semibold text-slate-600 mr-2">Tech Stack:</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">react-navigations</span>
+                            <span class="tag">redux</span>
+                            <span class="tag">Firebase</span>
+                        </div>                       
+                        <p class="mt-3">OpenShop is a react native template/starter pack for building ecommerce web apps. It provides you with a customizable and scalable base to build your own ecommerce app on.</p>
+                        
+                        <div class="flex mt-3.5 flex-col md:flex-row items-center">
+                            <a target="_blank" href="https://github.com/avionmission/OpenShop"><img class="img-btn mr-3 mt-1.5" src="assets/img/portfolio/githublink.png"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!--My Courses-->
-            <h2 class="text-gray-500 text-2xl mt-20 pt-5" id="courses">My Courses</h2>
+            <h2 class="text-2xl mt-7 pt-5 font-medium" id="courses">My Courses</h2>
             <div class="mt-3 grid gap-4 sm:grid-cols-2">
                 <!--Course-->
                 <div class="m-3 mr-5 w-auto h-auto lg:w-80 bg-gray-200 rounded-3xl overflow-hidden zoom" style="transition: 0.5s;" >
@@ -62,7 +130,7 @@
                     <div class="p-5">
                         <h3 class="text-xl mb-2">Android Studio: Bootcamp</h3>
                         <p>Learn Android App Development essentials: RecyclerView, MVVM, etc. using Kotlin in this bootcamp with Android Studio.</p>
-                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopRwzUWIT5KA_QfuHNtl0QQa"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course</button></a>
+                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopRwzUWIT5KA_QfuHNtl0QQa"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course -></button></a>
                     </div>
                 </div>
                 <!--Course-->
@@ -71,7 +139,7 @@
                     <div class="p-5">
                         <h3 class="text-xl mb-2">Android Development with Python</h3>
                         <p>Craft your first app in 12 minutes, followed by building an Instagram clone using kivy libraries. Plus, I'll demonstrate how to convert your .py file to a .apk (that dosen't crash).</p>
-                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course</button></a>
+                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopR4FkezM6j9dSaQrM2uZtrp"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course -></button></a>
                     </div>
                 </div>
                 <!--Course-->
@@ -80,7 +148,7 @@
                     <div class="p-5">
                         <h3 class="text-xl mb-2">Advance Video Editing Course</h3>
                         <p>Get advanced video editing done on your phone with Alight Motion, an Android app that enables professional techniques like rotoscoping and motion graphics, taught in this course.</p>
-                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course</button></a>
+                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLNtF4mlOpopT3K4LwDvsmU9HkjJN9vWM9"><button type="button" class="mt-4 text-gray-900 hover:text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 border border-black">View Course -></button></a>
                     </div>
                 </div>
             </div>
@@ -111,6 +179,22 @@
         arrow.onclick = () => {
             
         }
+    </script>
+
+    <!--Script for hamburger menu on smaller screens-->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLink = document.querySelector('.nav__link');
+
+        function hideNavLinks() {
+            navLink.classList.toggle('hide');
+        }
+
+        hamburger.addEventListener('click', () => {
+            hideNavLinks();
+        });
+
+
     </script>
 </body>
 </html>

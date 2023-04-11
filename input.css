@@ -10,6 +10,20 @@ html {
     
 }
 
+.tapered {
+  background-image: linear-gradient(179deg,rgb(254, 97, 97) 0%, rgb(254, 97, 97) 50%,transparent 54%, transparent 100%);
+}
+
+.g2 {
+  background: linear-gradient(90deg, #e6f6e7, #f9dbdd);
+}
+
+h2 span {
+  background-size:  100% 15%;
+  background-repeat: repeat-x;
+  background-position: left 0% bottom 0%;
+}
+
 .container {
     margin: auto;
     width: 50%;
@@ -44,16 +58,30 @@ html {
           /* Also define standard property for compatibility */
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+
+.insta-gradient:hover {
+  background: radial-gradient(circle at 90% 0%, #fdf497 10%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 30%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo {
     max-width: 200px; height: fit-content;
 }
 
+.icon {
+  display: none;
+}
+
+.bullet-points p {
+  margin-top: 10px;
+}
+
 @media (max-width: 640px) {
-    .logo {
-        max-width: 150px;
-    }
 
     .scroll-button {
         background: #000;
@@ -127,3 +155,132 @@ html {
     width: 100%;
     margin-top: 20px;
   }
+
+  .applogo {
+    height: 120px;
+    width: 120px;
+    border-radius: 27%;
+  }
+
+  .tag {
+    background-color: rgb(204, 218, 246);
+    color: #285AEB;
+    width: auto;
+    padding: 5px;
+    border-radius: 7px;
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+
+  .img-btn {
+    height: 45px;
+    width: auto;
+  }
+
+  /* nav styles */
+
+  .nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+.logo-txt {
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.logo-img {
+  width: 20px;
+  height: 20px;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: rgb(154, 154, 154);
+}
+
+.nav__link {
+  position: fixed;
+  width: 100%;
+  top: 2.5rem;
+  background-color: rgb(217, 228, 251);
+  color: rgb(102, 102, 245);
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.nav__link a:hover {
+  
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .content {
+      max-width: 1200px;
+      margin-top: 100px;
+  }
+
+  .flexbox {
+      flex-direction: row;
+  }
+
+  .mxw {
+    max-width: 1200px;
+  }
+
+  .nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 15px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
