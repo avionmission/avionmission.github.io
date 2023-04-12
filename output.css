@@ -706,24 +706,12 @@ video {
   padding-bottom: 0.625rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
 
-.pt-11 {
-  padding-top: 2.75rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-9 {
@@ -816,8 +804,11 @@ video {
 
 html {
   font-family: 'Golos Text', sans-serif;
-  background-image: url(assets/img/white-concrete-wall.jpg);
-  background-size:auto;
+  background: #ebedee;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   scroll-behavior: smooth;
 }
 
