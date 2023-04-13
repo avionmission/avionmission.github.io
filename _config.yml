@@ -8,3 +8,7 @@ social-network-links:
   email: "avionmission@gmail.com"
   twitter: avionmission
   youtube: c/AvinashPrasad
+
+# Redirect non-www to www
+enforce_url: www.example.com
+
