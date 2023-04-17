@@ -1,0 +1,14 @@
+name: Set File Permissions
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  set-permissions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set file permission
+        run: chmod 644 ./.well-known/acme-challenge/test.txt
+
