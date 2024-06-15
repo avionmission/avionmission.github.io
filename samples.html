@@ -3,23 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Samples - Avinash Prasad</title>
+    <title>Avinash Prasad - Technical Content Creator</title>
+    <style>
+        /* Reset some basic elements */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General body styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f5f6f7;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: #f5f6f7;
+        }
+
+        /* Container to center content and give it a max-width */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 3.2rem;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode .container {
+            background-color: #444;
+            color: #f5f6f7;
+        }
+
+        /* Styling for headings */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+        }
+
+        /* Styling for paragraphs */
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Unordered list styling */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Link styling */
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .dark-mode a {
+            color: #4aa3ff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark mode toggle button */
+        .dark-mode-toggle {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: #0073e6;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .dark-mode .dark-mode-toggle {
+            background-color: #4aa3ff;
+            color: #333;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    Hi, I'm Avinash Prasad, Technical Content Creator and fullstack developer. Here are some of my technical content samples:
+    <div class="container">
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <p><b>👋 Hi, I'm Avinash Prasad, </b>
+        Technical Content Creator and Fullstack developer. Here are some of my technical content samples:</p>
+        
+        <h3>Published on the Twilio Blog</h3>
+        <ul>
+            <li><a href="https://www.twilio.com/en-us/blog/magic-link-authentication-sendgrid-auth-js">Magic Link Authentication with SendGrid and Auth.js</a></li>
+            <li><a href="https://www.twilio.com/en-us/blog/send-personalized-emails-gemini-sendgrid-nodejs">Send Personalized Emails using Gemini API, SendGrid and Node.js</a></li>
+        </ul>
 
-    Published on the Twilio Blog
-    1. <a href="https://www.twilio.com/en-us/blog/magic-link-authentication-sendgrid-auth-js">Magic Link Authentication with SendGrid and Auth.js</a>
-    2. <a href="https://www.twilio.com/en-us/blog/send-personalized-emails-gemini-sendgrid-nodejs">Send Personalized Emails using Gemini API, SendGrid and Node.js</a>
+        <h3>Published on Semaphore Blog</h3>
+        <ul>
+            <li><a href="https://semaphoreci.com/blog/devsecops">DevSecOps in Modern Software Development</a></li>
+        </ul>
 
-    Published on Semaphore Blog:
-    1. <a href="https://semaphoreci.com/blog/devsecops">DevSecOps in Modern Software Development</a>
+        <h3>Published on Personal Blog</h3>
+        <ul>
+            <li><a href="https://avionmission.com/blog/react-flask-tutorial/">How to use Python code in your React App (React + Flask Tutorial)</a></li>
+            <li><a href="https://avionmission.com/blog/convert-py-to-apk-using-python-and-buildozer/">Convert Python code into Android Apps</a></li>
+        </ul>
 
-    Published on personal blog:
-    <a href="https://avionmission.com/blog/react-flask-tutorial/">How to use Python code in your React App (React + Flask Tutorial)</a>
-    <a href="https://avionmission.com/blog/convert-py-to-apk-using-python-and-buildozer/">Convert Python code into Android Apps</a>
+        <h3>Technical videos with 130K+ Streams</h3>
+        <p><a href="http://youtube.com/AvinashPrasad">https://youtube.com/AvinashPrasad</a></p>
 
-    Technical videos with 130K+ Streams:
-    <a href="http://youtube.com/AvinashPrasad">https://youtube.com/AvinashPrasad</a>
+        <h3>Connect with me</h3>
+        <ul>
+            <li><a href="http://x.com/avionmission" target="_blank" rel="noopener noreferrer">x.com/avionmission</a></li>
+            <li>Email: <a href="mailto:avionmission@gmail.com">avionmission@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
