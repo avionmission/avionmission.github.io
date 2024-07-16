@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <title>Avinash Prasad - Technical Content Creator</title>
     <style>
         /* Reset some basic elements */
-        body, h1, h2, p, ul {
+        body,
+        h1,
+        h2,
+        p,
+        ul {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -14,34 +25,35 @@
 
         /* General body styling */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #f5f6f7;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 300;
+            background-color: #1c1c1c;
+            color: #f5f6f7;
             padding: 20px;
-            line-height: 1.6;
+            font-size: 1.5rem;
+            line-height: 2rem;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .dark-mode {
-            background-color: #333;
-            color: #f5f6f7;
+            background-color: #f5f6f7;
+            color: #333;
         }
 
         /* Container to center content and give it a max-width */
         .container {
             max-width: 800px;
             margin: 0 auto;
-            margin-top: 3.2rem;
-            background-color: #fff;
+            background-color: transparent;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
             transition: background-color 0.3s, color 0.3s;
         }
 
         .dark-mode .container {
-            background-color: #444;
-            color: #f5f6f7;
+
+            color: #1c1c1c;
         }
 
         /* Styling for headings */
@@ -54,6 +66,10 @@
             font-size: 1.5rem;
             margin: 20px 0 10px;
         }
+        
+        h3{
+            font-weight: 400;
+        }
 
         /* Styling for paragraphs */
         p {
@@ -62,7 +78,7 @@
 
         /* Unordered list styling */
         ul {
-            list-style: none;
+            list-style:inside;
             padding-left: 0;
         }
 
@@ -72,12 +88,12 @@
 
         /* Link styling */
         a {
-            color: #0073e6;
+            color: #4aa3ff;
             text-decoration: none;
         }
 
         .dark-mode a {
-            color: #4aa3ff;
+            color: #0073e6;            
         }
 
         a:hover {
@@ -101,12 +117,16 @@
             color: #333;
         }
 
+        .font-3xl {
+            font-size: 1.65rem;
+        }
+
         /* Responsive design */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
             }
-            
+
             .container {
                 padding: 15px;
                 margin-top: 0;
@@ -120,18 +140,35 @@
                 font-size: 1.25rem;
             }
         }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .header img{
+            height: 50px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <div class="header">
+            <a href="https://avionmission.com"><img src="./assets/img/avinashprasadblue.png"/></a>
+            <button class="dark-mode-toggle font-3xl" onclick="toggleDarkMode()">☼</button>
+        </div>
         <p><b>👋 Hi, I'm Avinash Prasad, </b>
-        Technical Content Creator and Fullstack developer. Here are some of my technical content samples:</p>
-        
+            Technical Content Creator and Fullstack developer.</p><p>Here are some of my technical content samples:</p>
+
         <h3>Published on the Twilio Blog</h3>
         <ul>
-            <li><a href="https://www.twilio.com/en-us/blog/magic-link-authentication-sendgrid-auth-js">Magic Link Authentication with SendGrid and Auth.js</a></li>
-            <li><a href="https://www.twilio.com/en-us/blog/send-personalized-emails-gemini-sendgrid-nodejs">Send Personalized Emails using Gemini API, SendGrid and Node.js</a></li>
+            <li><a href="https://www.twilio.com/en-us/blog/magic-link-authentication-sendgrid-auth-js">Magic Link
+                    Authentication with SendGrid and Auth.js</a></li>
+            <li><a href="https://www.twilio.com/en-us/blog/send-personalized-emails-gemini-sendgrid-nodejs">Send
+                    Personalized Emails using Gemini API, SendGrid and Node.js</a></li>
         </ul>
 
         <h3>Published on Semaphore Blog</h3>
@@ -141,8 +178,10 @@
 
         <h3>Published on Personal Blog</h3>
         <ul>
-            <li><a href="https://avionmission.com/blog/react-flask-tutorial/">How to use Python code in your React App (React + Flask Tutorial)</a></li>
-            <li><a href="https://avionmission.com/blog/convert-py-to-apk-using-python-and-buildozer/">Convert Python code into Android Apps</a></li>
+            <li><a href="https://avionmission.com/blog/react-flask-tutorial/">How to use Python code in your React App
+                    (React + Flask Tutorial)</a></li>
+            <li><a href="https://avionmission.com/blog/convert-py-to-apk-using-python-and-buildozer/">Convert Python
+                    code into Android Apps</a></li>
         </ul>
 
         <h3>Technical videos with 130K+ Streams</h3>
@@ -150,7 +189,8 @@
 
         <h3>Connect with me</h3>
         <ul>
-            <li><a href="http://x.com/avionmission" target="_blank" rel="noopener noreferrer">x.com/avionmission</a></li>
+            <li><a href="http://x.com/avionmission" target="_blank" rel="noopener noreferrer">x.com/avionmission</a>
+            </li>
             <li>Email: <a href="mailto:avionmission@gmail.com">avionmission@gmail.com</a></li>
         </ul>
     </div>
@@ -161,4 +201,5 @@
         }
     </script>
 </body>
+
 </html>
